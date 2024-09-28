@@ -112,45 +112,75 @@ li a {
 li a:hover {
     color: var(--yellow-color);
 }
-li a.menu:hover::before {
+
+.menu_a::after {
     content: ' ';
     width: 45px;
     border: 1.5px solid var(--yellow-color);
     border-radius: 5px;
     position: absolute;
     bottom: 0;
+    display: none;
+} 
+
+.menu_a:focus::after, .menu_a:active::after {
+    display: block;
 }
-li a.menub:hover::before {
+
+.menu_b::after {
     content: ' ';
     width: 105px;
     border: 1.5px solid var(--yellow-color);
     border-radius: 5px;
     position: absolute;
     bottom: 0;
+    display: none;
+} 
+
+.menu_b:focus::after, .menu_b:active::after {
+    display: block;
 }
-li a.menuc:hover::before {
+
+.menu_c::after {
     content: ' ';
     width: 55px;
     border: 1.5px solid var(--yellow-color);
     border-radius: 5px;
     position: absolute;
     bottom: 0;
+    display: none;
+} 
+
+.menu_c:focus::after, .menu_c:active::after {
+    display: block;
 }
-li a.menud:hover::before {
+
+.menu_d::after {
     content: ' ';
     width: 73px;
     border: 1.5px solid var(--yellow-color);
     border-radius: 5px;
     position: absolute;
     bottom: 0;
+    display: none;
+} 
+
+.menu_d:focus::after, .menu_d:active::after {
+    display: block;
 }
-li a.menue:hover::before {
+
+.menu_e::after {
     content: ' ';
     width: 65px;
     border: 1.5px solid var(--yellow-color);
     border-radius: 5px;
     position: absolute;
     bottom: 0;
+    display: none;
+} 
+
+.menu_e:focus::after, .menu_e:active::after {
+    display: block;
 }
 button {
     width: 80px;
